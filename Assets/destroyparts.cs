@@ -19,7 +19,7 @@ public class destroyparts : MonoBehaviour
         rb2.AddTorque(torque);
 
 
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 2f);
     }
 
 }

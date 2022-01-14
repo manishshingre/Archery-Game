@@ -39,7 +39,6 @@
      <Compile Include="Assets\bowscript.cs" />
      <Compile Include="Assets\arrowScript.cs" />
      <Compile Include="Assets\destroyparts.cs" />
-     <Compile Include="Assets\boxdestroy.cs" />
      <Compile Include="Assets\BoxScript.cs" />
      <Compile Include="Assets\ShootArrow.cs" />
      <None Include="Assets\hero Skin\_TXT\LICENSES.txt" />
