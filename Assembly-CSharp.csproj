@@ -36,11 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\bowscript.cs" />
-     <Compile Include="Assets\arrowScript.cs" />
-     <Compile Include="Assets\destroyparts.cs" />
-     <Compile Include="Assets\BoxScript.cs" />
-     <Compile Include="Assets\ShootArrow.cs" />
+     <Compile Include="Assets\Scripts\bowscript.cs" />
+     <Compile Include="Assets\Scripts\arrowScript.cs" />
+     <Compile Include="Assets\Scripts\destroyparts.cs" />
+     <Compile Include="Assets\Scripts\BoxScript.cs" />
+     <Compile Include="Assets\Scripts\ShootArrow.cs" />
+     <Compile Include="Assets\Scripts\image clearer.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

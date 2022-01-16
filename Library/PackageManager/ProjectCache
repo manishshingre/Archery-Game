@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637779091545058389
+      ticks: 637778564670267940
     m_Hash: 4072686707
   m_LockFileStatus:
     m_FilePath: D:/Archery-Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637779091545058389
+      ticks: 637778564670267940
     m_Hash: 4186997714
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -808,6 +808,7 @@ m_PackageAssets:
         - 3.0.6
         - 3.0.7
         - 3.0.9
+        - 3.0.10
         compatible:
         - 1.0.2
         - 1.0.6
@@ -835,6 +836,7 @@ m_PackageAssets:
         - 3.0.6
         - 3.0.7
         - 3.0.9
+        - 3.0.10
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
