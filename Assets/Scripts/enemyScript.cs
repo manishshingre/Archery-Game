@@ -11,6 +11,7 @@ public class enemyScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other){
         if(other.gameObject.CompareTag("Weapon")){
             ExplodeBox();
+            PlayerManager.enemy_count -= 1;
         }
     }
 
@@ -19,7 +20,7 @@ public class enemyScript : MonoBehaviour
         
         GameObject destructable = (GameObject)Instantiate(destructableRef);
         destructable.transform.position = transform.position;
-
+        
         Destroy(gameObject,0.5f);
     }
 
