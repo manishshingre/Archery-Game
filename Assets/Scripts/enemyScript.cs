@@ -21,7 +21,7 @@ public class enemyScript : MonoBehaviour
         GameObject destructable = (GameObject)Instantiate(destructableRef);
         destructable.transform.position = transform.position;
         
-        Destroy(gameObject,0.5f);
+        Destroy(gameObject,0.1f);
     }
 
 }
