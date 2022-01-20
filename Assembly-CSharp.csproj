@@ -40,11 +40,11 @@
      <Compile Include="Assets\Scripts\bowscript.cs" />
      <Compile Include="Assets\Scripts\arrowScript.cs" />
      <Compile Include="Assets\Scripts\friendScript.cs" />
-     <Compile Include="Assets\Scripts\enemyDestroy.cs" />
      <Compile Include="Assets\Scripts\destroyparts.cs" />
      <Compile Include="Assets\Scripts\image clearer.cs" />
      <Compile Include="Assets\Scripts\BoxScript.cs" />
      <Compile Include="Assets\Scripts\ShootArrow.cs" />
+     <Compile Include="Assets\Scripts\enemyScript.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
