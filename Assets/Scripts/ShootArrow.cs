@@ -24,9 +24,10 @@ public class ShootArrow : MonoBehaviour
 
 void Shoot()
 {
-    GameObject ArrowIns = Instantiate(Arrow, transform.position, transform.rotation);
-    ArrowIns.GetComponent<Rigidbody2D>().AddForce(transform.right * LaunchForce);
-
+    if(PlayerManager.enemy_count>0 && PlayerManager.isGameOver==false){
+        GameObject ArrowIns = Instantiate(Arrow, transform.position, transform.rotation);
+        ArrowIns.GetComponent<Rigidbody2D>().AddForce(transform.right * LaunchForce);
+    }
 }
 
 }
