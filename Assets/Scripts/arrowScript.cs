@@ -39,7 +39,7 @@ public class arrowScript : MonoBehaviour
         hasHit = true;
         rb.velocity = Vector2.zero;
 
-        Destroy(gameObject, 0.2f);
+        Destroy(gameObject, 0.1f);
     }
 
 }

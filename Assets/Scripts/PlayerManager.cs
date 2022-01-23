@@ -81,6 +81,6 @@ public class PlayerManager : MonoBehaviour
 
 
     public void ReplayLevel(){
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level 1");
     }
 }
