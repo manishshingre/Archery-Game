@@ -8,6 +8,11 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField]
     GameObject[] enemy;
+    [SerializeField]
+    private AudioSource GameOverSound;
+    [SerializeField]
+    private AudioSource LevelCompleteSound;
+    public int panel_sound_Count = 0;
     public static int enemy_count = 0;
     public static bool isGameOver;
     public GameObject gameOverScreen;
@@ -35,16 +40,16 @@ public class PlayerManager : MonoBehaviour
 
     // print(percentage+"%");
 
-    if(percentage>=33f && percentage <66f){
+    if(percentage>=33f && percentage <50f){
         //one star
         stars[0].SetActive(true);
     }
-    else if(percentage>=66f && percentage< 70f){
+    else if(percentage>=50f && percentage< 70f){
         //two star
         stars[0].SetActive(true);
         stars[1].SetActive(true);
     }
-    else{
+    else if (percentage>= 70f){
         //three star
         stars[0].SetActive(true);
         stars[1].SetActive(true);
@@ -63,6 +68,15 @@ public class PlayerManager : MonoBehaviour
             levelCompletescreen.SetActive(true);
             starsAchieved();
         }
+        if (isGameOver && panel_sound_Count==0){
+            GameOverSound.Play();
+            panel_sound_Count += 1;
+        }
+        if (enemy_count == 0 && panel_sound_Count==0){
+            LevelCompleteSound.Play();
+            panel_sound_Count += 1;
+        }
+        
     }
 
 
