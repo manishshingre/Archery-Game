@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    Scene m_Scene;
 
     [SerializeField]
     GameObject[] enemy;
+    
     [SerializeField]
     private AudioSource GameOverSound;
+    
     [SerializeField]
     private AudioSource LevelCompleteSound;
     public int panel_sound_Count = 0;
@@ -19,6 +22,11 @@ public class PlayerManager : MonoBehaviour
     public GameObject levelCompletescreen;
     public GameObject[] stars;
     private int EnemyCount;
+
+    public int score;
+    string sceneName;
+
+
     // Start is called before the first frame update
     private void Awake() {
         isGameOver = false;
@@ -27,34 +35,41 @@ public class PlayerManager : MonoBehaviour
     }
     // Start is called before the first frame update
     void Start()
-    {   EnemyCount=GameObject.FindGameObjectsWithTag("Enemy").Length;
+    {   
+        m_Scene = SceneManager.GetActiveScene();
+        sceneName = m_Scene.name;
+
+        EnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
         enemy = GameObject.FindGameObjectsWithTag("Enemy");
         foreach(GameObject e in enemy){
             enemy_count += 1;
         }
     }
     public void starsAchieved(){
-    int EnemyLeft=GameObject.FindGameObjectsWithTag("Enemy").Length;
-    int EnemyKilled = EnemyCount-EnemyLeft;
-    float percentage=(float.Parse((EnemyKilled).ToString())/float.Parse((EnemyCount).ToString())*100f);
+        int EnemyLeft=GameObject.FindGameObjectsWithTag("Enemy").Length;
+        int EnemyKilled = EnemyCount-EnemyLeft;
+        float percentage=(float.Parse((EnemyKilled).ToString())/float.Parse((EnemyCount).ToString())*100f);
 
-    // print(percentage+"%");
+        // print(percentage+"%");
 
-    if(percentage>=33f && percentage <50f){
-        //one star
-        stars[0].SetActive(true);
-    }
-    else if(percentage>=50f && percentage< 70f){
-        //two star
-        stars[0].SetActive(true);
-        stars[1].SetActive(true);
-    }
-    else if (percentage>= 70f){
-        //three star
-        stars[0].SetActive(true);
-        stars[1].SetActive(true);
-        stars[2].SetActive(true);
-    }
+        if(percentage>=33f && percentage <50f){
+            //one star
+            stars[0].SetActive(true);
+            score = 1;
+        }
+        else if(percentage>=50f && percentage< 70f){
+            //two star
+            stars[0].SetActive(true);
+            stars[1].SetActive(true);
+            score = 2;
+        }
+        else if (percentage>= 70f){
+            //three star
+            stars[0].SetActive(true);
+            stars[1].SetActive(true);
+            stars[2].SetActive(true);
+            score = 3;
+        }
     }
 
     // Update is called once per frame
@@ -75,6 +90,9 @@ public class PlayerManager : MonoBehaviour
         if (enemy_count == 0 && panel_sound_Count==0){
             LevelCompleteSound.Play();
             panel_sound_Count += 1;
+        }
+        if(score > PlayerPrefs.GetInt(sceneName, 0)){
+            PlayerPrefs.SetInt(sceneName, score);
         }
         
     }
