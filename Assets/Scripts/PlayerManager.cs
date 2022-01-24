@@ -78,9 +78,8 @@ public class PlayerManager : MonoBehaviour
         }
         
     }
-
-
-    public void ReplayLevel(){
-        SceneManager.LoadScene("Level 1");
+    public void PressSelection(string LevelName){
+        SceneManager.LoadScene(LevelName);
     }
+
 }
