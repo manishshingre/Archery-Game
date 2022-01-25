@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637787159594992999
+      ticks: 637787369560107405
     m_Hash: 4072686707
   m_LockFileStatus:
     m_FilePath: D:/Unity/Archery-Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637787159595005288
+      ticks: 637787369560120633
     m_Hash: 4186997714
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

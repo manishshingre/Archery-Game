@@ -52,30 +52,47 @@ public class PlayerManager : MonoBehaviour
         int BoxLeft=GameObject.FindGameObjectsWithTag("Box").Length;
         int EnemyKilled = EnemyCount-EnemyLeft;
         int BoxDestroyed = BoxCount-BoxLeft;
-        float percentage=(float.Parse((EnemyKilled).ToString()+BoxDestroyed.ToString())/float.Parse((EnemyCount).ToString()+(BoxCount*3.2f).ToString())*100f);
+        // float percentage=(float.Parse((EnemyKilled).ToString()+BoxDestroyed.ToString())/float.Parse((EnemyCount).ToString()+(BoxCount*3.2f).ToString())*100f);
+
+            float percentage=(float.Parse(BoxDestroyed.ToString())/float.Parse((BoxCount).ToString())*100f);
+        
 
         print(percentage+"%");
 
-        if(percentage>=33f && percentage <50f){
-            //one star
-            stars[2].SetActive(true);
-            score = 1;
-        }
-        else if(percentage>=50f && percentage< 80f){
+        // if((percentage>=33f && percentage <50f)){
+        //     //one star
+        //     stars[2].SetActive(true);
+        //     score = 1;
+        // }
+        // else if(percentage>=50f && percentage< 80f){
+        //     //two star
+        //     stars[2].SetActive(true);
+        //     stars[1].SetActive(true);
+        //     score = 2;
+        // }
+        // else if (percentage>= 80f){
+        //     //three star
+        //     stars[0].SetActive(true);
+        //     stars[1].SetActive(true);
+        //     stars[2].SetActive(true);
+        //     score = 3;
+        // }
+        if(percentage>0f && percentage<=50f){
             //two star
             stars[2].SetActive(true);
             stars[1].SetActive(true);
             score = 2;
         }
-        else if (percentage>= 80f){
+        else if (percentage>50f){
             //three star
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(true);
             score = 3;
         }
-        else{
-            
+        else if( EnemyLeft==0){
+            stars[2].SetActive(true);
+            score=1;
         }
     }
 
@@ -86,7 +103,7 @@ public class PlayerManager : MonoBehaviour
             gameOverScreen.SetActive(true);
             starsAchieved();
         }
-        if (enemy_count == 0){
+        else if (enemy_count == 0){
             levelCompletescreen.SetActive(true);
             starsAchieved();
         }
