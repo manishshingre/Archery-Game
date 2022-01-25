@@ -22,6 +22,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject levelCompletescreen;
     public GameObject[] stars;
     private int EnemyCount;
+    private int BoxCount;
 
     public int score;
     string sceneName;
@@ -40,6 +41,7 @@ public class PlayerManager : MonoBehaviour
         sceneName = m_Scene.name;
 
         EnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        BoxCount = GameObject.FindGameObjectsWithTag("Box").Length;
         enemy = GameObject.FindGameObjectsWithTag("Enemy");
         foreach(GameObject e in enemy){
             enemy_count += 1;
@@ -47,28 +49,33 @@ public class PlayerManager : MonoBehaviour
     }
     public void starsAchieved(){
         int EnemyLeft=GameObject.FindGameObjectsWithTag("Enemy").Length;
+        int BoxLeft=GameObject.FindGameObjectsWithTag("Box").Length;
         int EnemyKilled = EnemyCount-EnemyLeft;
-        float percentage=(float.Parse((EnemyKilled).ToString())/float.Parse((EnemyCount).ToString())*100f);
+        int BoxDestroyed = BoxCount-BoxLeft;
+        float percentage=(float.Parse((EnemyKilled).ToString()+BoxDestroyed.ToString())/float.Parse((EnemyCount).ToString()+(BoxCount*3.2f).ToString())*100f);
 
-        // print(percentage+"%");
+        print(percentage+"%");
 
         if(percentage>=33f && percentage <50f){
             //one star
-            stars[0].SetActive(true);
+            stars[2].SetActive(true);
             score = 1;
         }
-        else if(percentage>=50f && percentage< 70f){
+        else if(percentage>=50f && percentage< 80f){
             //two star
-            stars[0].SetActive(true);
+            stars[2].SetActive(true);
             stars[1].SetActive(true);
             score = 2;
         }
-        else if (percentage>= 70f){
+        else if (percentage>= 80f){
             //three star
             stars[0].SetActive(true);
             stars[1].SetActive(true);
             stars[2].SetActive(true);
             score = 3;
+        }
+        else{
+            
         }
     }
 
