@@ -27,12 +27,12 @@ public class PlayerManager : MonoBehaviour
     public int score;
     string sceneName;
 
+    public GameObject Pausemenupanel;
+
 
     // Start is called before the first frame update
     private void Awake() {
         isGameOver = false;
-        // if (instance==null)
-        // instance=this;
     }
     // Start is called before the first frame update
     void Start()
@@ -77,22 +77,24 @@ public class PlayerManager : MonoBehaviour
         //     stars[2].SetActive(true);
         //     score = 3;
         // }
-        if(percentage>0f && percentage<=50f){
-            //two star
-            stars[2].SetActive(true);
-            stars[1].SetActive(true);
-            score = 2;
-        }
-        else if (percentage>50f){
-            //three star
-            stars[0].SetActive(true);
-            stars[1].SetActive(true);
-            stars[2].SetActive(true);
-            score = 3;
-        }
-        else if( EnemyLeft==0){
-            stars[2].SetActive(true);
-            score=1;
+        if (EnemyLeft==0){
+            if(percentage>0f && percentage<=50f){
+                //two star
+                stars[2].SetActive(true);
+                stars[1].SetActive(true);
+                score = 2;
+            }
+            else if (percentage>50f){
+                //three star
+                stars[0].SetActive(true);
+                stars[1].SetActive(true);
+                stars[2].SetActive(true);
+                score = 3;
+            }
+            else if( EnemyLeft==0){
+                stars[2].SetActive(true);
+                score=1;
+            }
         }
     }
 
@@ -104,8 +106,8 @@ public class PlayerManager : MonoBehaviour
             starsAchieved();
         }
         else if (enemy_count == 0){
-            levelCompletescreen.SetActive(true);
             starsAchieved();
+            levelCompletescreen.SetActive(true);
         }
         if (isGameOver && panel_sound_Count==0){
             GameOverSound.Play();
@@ -124,4 +126,15 @@ public class PlayerManager : MonoBehaviour
         SceneManager.LoadScene(LevelName);
     }
 
+    public void PauseGame(){
+        Time.timeScale=0;
+        Pausemenupanel.SetActive(true);
+    }
+
+    public void ResumeGame(){
+        Time.timeScale=1;
+        Pausemenupanel.SetActive(false);
+
+    }
+    
 }
