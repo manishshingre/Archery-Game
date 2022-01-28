@@ -20,6 +20,9 @@ public class LevelSelectionScript : MonoBehaviour
         if(gameObject.name=="1"){
             unlocked = true;
         }
+        if(gameObject.name=="14"){
+            unlocked = true;
+        }
     }
 
     private void UpdateLevelStatus(){
