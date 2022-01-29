@@ -43,14 +43,14 @@
      <Compile Include="Assets\Scripts\destroyparts.cs" />
      <Compile Include="Assets\Scripts\music.cs" />
      <Compile Include="Assets\Scripts\boxBrake.cs" />
+     <Compile Include="Assets\Scripts\map2Script.cs" />
      <Compile Include="Assets\Scripts\image clearer.cs" />
      <Compile Include="Assets\Scripts\LevelSelectionScript.cs" />
      <Compile Include="Assets\Scripts\BoxScript.cs" />
      <Compile Include="Assets\Scripts\enemyScript.cs" />
      <Compile Include="Assets\Scripts\changeScene.cs" />
-     <Compile Include="Assets\Scripts\ShootArrow.cs" />
-     <Compile Include="Assets\Scripts\map2Script.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
+     <Compile Include="Assets\Scripts\ShootArrow.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

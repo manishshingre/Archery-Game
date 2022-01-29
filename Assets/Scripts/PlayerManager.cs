@@ -31,14 +31,12 @@ public class PlayerManager : MonoBehaviour
 
 
     // Start is called before the first frame update
-    // private void Awake() {
-    //     isGameOver = false;
-    // }
+    private void Awake() {
+        isGameOver = false;
+    }
     // Start is called before the first frame update
     void Start()
     {   
-        enemy_count = 0;
-        isGameOver = false;
         m_Scene = SceneManager.GetActiveScene();
         sceneName = m_Scene.name;
 
@@ -58,9 +56,7 @@ public class PlayerManager : MonoBehaviour
 
             float percentage=(float.Parse(BoxDestroyed.ToString())/float.Parse((BoxCount).ToString())*100f);
         
-
-        // print(percentage+"%");
-
+        print(percentage+"%");
 
         if (EnemyLeft==0){
             if(percentage>0f && percentage<=50f){
@@ -86,21 +82,20 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Debug.Log(enemy_count);
+        int EnemyLeft=GameObject.FindGameObjectsWithTag("Enemy").Length;
         if (isGameOver){
+            // starsAchieved();
             gameOverScreen.SetActive(true);
-            starsAchieved();
         }
-        else if (enemy_count == 0){
+        else if (EnemyLeft == 0){
             starsAchieved();
             levelCompletescreen.SetActive(true);
-
         }
         if (isGameOver && panel_sound_Count==0){
             GameOverSound.Play();
             panel_sound_Count += 1;
         }
-        if (enemy_count == 0 && panel_sound_Count==0){
+        if (EnemyLeft == 0 && panel_sound_Count==0){
             LevelCompleteSound.Play();
             panel_sound_Count += 1;
         }
@@ -110,7 +105,9 @@ public class PlayerManager : MonoBehaviour
         
     }
     public void PressSelection(string LevelName){
+        Time.timeScale=1;
         SceneManager.LoadScene(LevelName);
+
     }
 
     public void PauseGame(){
