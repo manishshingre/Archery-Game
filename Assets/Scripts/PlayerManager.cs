@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
     public static bool isGameOver;
     public GameObject gameOverScreen;
     public GameObject levelCompletescreen;
+    public GameObject pausemenu;
     public GameObject[] stars;
     private int EnemyCount;
     private int BoxCount;
@@ -86,10 +87,12 @@ public class PlayerManager : MonoBehaviour
         if (isGameOver){
             // starsAchieved();
             gameOverScreen.SetActive(true);
+            pausemenu.SetActive(false);
         }
         else if (EnemyLeft == 0){
             starsAchieved();
             levelCompletescreen.SetActive(true);
+            pausemenu.SetActive(false);
         }
         if (isGameOver && panel_sound_Count==0){
             GameOverSound.Play();

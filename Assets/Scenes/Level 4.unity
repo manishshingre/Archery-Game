@@ -5981,6 +5981,7 @@ MonoBehaviour:
   panel_sound_Count: 0
   gameOverScreen: {fileID: 329007945}
   levelCompletescreen: {fileID: 1586484018}
+  pausemenu: {fileID: 1362208890}
   stars:
   - {fileID: 1704665232}
   - {fileID: 940847823}
