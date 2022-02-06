@@ -6,6 +6,13 @@ public class bowscript : MonoBehaviour
 {
 
     public Vector2 direction;
+    public LineRenderer lr;
+    Vector2 dragStartPos;
+    Touch touch;
+    public float LaunchForce;
+
+    public GameObject Arrow;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +27,65 @@ public class bowscript : MonoBehaviour
 
         Vector2 bowPos = transform.position;
 
-        direction = MousePos - bowPos;
+        direction = bowPos - MousePos;
 
         FaceMouse();
+        if(Input.touchCount > 0){
+            touch = Input.GetTouch(0);
+
+            if(touch.phase == TouchPhase.Began){
+                DragStart();
+            }
+
+            if (touch.phase == TouchPhase.Moved){
+                Dragging();
+            }
+
+            if(touch.phase == TouchPhase.Ended){
+                DragRelease();
+                Shoot();
+            }
+        }
     }
 
     void FaceMouse()
     {
         transform.right = direction;
     }
+
+    void DragStart(){
+        dragStartPos = Camera.main.ScreenToWorldPoint(touch.position);
+        // dragStartPos.z = 0f;
+        lr.positionCount = 1;
+        lr.SetPosition(0, dragStartPos);
+
+    }
+
+    void Dragging(){
+        Vector2 draggingPos = Camera.main.ScreenToWorldPoint(touch.position);
+        // draggingPos.z = 0f;
+        lr.positionCount = 2;
+        lr.SetPosition(1, draggingPos);
+
+    }
+
+    void DragRelease(){
+        lr.positionCount = 0;
+
+        Vector2 dragReleasePos = Camera.main.ScreenToWorldPoint(touch.position);
+        // draggingPos.z = 0f;
+
+        // Vector2 force = dragStartPos - dragReleasePos;
+        // Vector2 clampedForce = Vector2.ClampMagnitude(force, maxDrag) * power;
+
+        // rb.AddForce(clampedForce, ForceMode2D.Impulse);
+    }
+
+    void Shoot()
+{
+    if(PlayerManager.enemy_count>0 && PlayerManager.isGameOver==false){
+        GameObject ArrowIns = Instantiate(Arrow, transform.position, transform.rotation);
+        ArrowIns.GetComponent<Rigidbody2D>().AddForce(transform.right * LaunchForce);
+    }
+}
 }
