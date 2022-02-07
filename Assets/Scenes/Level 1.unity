@@ -3499,8 +3499,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
   lr: {fileID: 1172663996}
-  LaunchForce: 1000
-  Arrow: {fileID: 2393585311427883450, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
+  LaunchForce: 1350
+  Arrow: {fileID: 2057742625119832658, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
 --- !u!212 &1172663998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4362,7 +4362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452846461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4111, y: 2.2846, z: 0}
+  m_LocalPosition: {x: 1.26, y: 3.29, z: 0}
   m_LocalScale: {x: 3.3010738, y: 3.9619792, z: 2.3004}
   m_Children: []
   m_Father: {fileID: 1599719559}

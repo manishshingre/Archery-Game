@@ -7810,8 +7810,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
   lr: {fileID: 1951338590}
-  LaunchForce: 1000
-  Arrow: {fileID: 2393585311427883450, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
+  LaunchForce: 1350
+  Arrow: {fileID: 2057742625119832658, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
 --- !u!212 &1951338592
 SpriteRenderer:
   m_ObjectHideFlags: 0
