@@ -1751,12 +1751,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3015,8 +3015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
   lr: {fileID: 1089289217}
-  LaunchForce: 1350
-  Arrow: {fileID: 2057742625119832658, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
+  LaunchForce: 1375
+  Arrow: {fileID: 410760894262548322, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
 --- !u!212 &1089289215
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3182,8 +3182,8 @@ LineRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
+    numCornerVertices: 90
+    numCapVertices: 90
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
@@ -3318,11 +3318,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3185698636245614014, guid: 29cfea84ad93c794f9e12fff12f6fd1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.65
+      value: 9.48
       objectReference: {fileID: 0}
     - target: {fileID: 3185698636245614014, guid: 29cfea84ad93c794f9e12fff12f6fd1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.65
+      value: -5.71
       objectReference: {fileID: 0}
     - target: {fileID: 3185698636245614014, guid: 29cfea84ad93c794f9e12fff12f6fd1d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4255,7 +4255,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6c2dc48ae6880084398594f20c9f1199, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6425,7 +6425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748c5849e01debf48a399d18f2586ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destructableRef: {fileID: 0}
 --- !u!114 &1822146464
 MonoBehaviour:
   m_ObjectHideFlags: 0

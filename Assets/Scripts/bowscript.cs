@@ -8,6 +8,8 @@ public class bowscript : MonoBehaviour
     public Vector2 direction;
     public LineRenderer lr;
     Vector2 dragStartPos;
+    // public int maxDrag=5;
+    // public float power = 8;
     Touch touch;
     public float LaunchForce;
 
@@ -65,6 +67,7 @@ public class bowscript : MonoBehaviour
         Vector2 draggingPos = Camera.main.ScreenToWorldPoint(touch.position);
         // draggingPos.z = 0f;
         lr.positionCount = 2;
+
         lr.SetPosition(1, draggingPos);
 
     }
@@ -83,7 +86,7 @@ public class bowscript : MonoBehaviour
 
     void Shoot()
 {
-    if(PlayerManager.enemy_count>0 && PlayerManager.isGameOver==false){
+    if(PlayerManager.isGameOver==false && PlayerManager.enemy_count>0){
         GameObject ArrowIns = Instantiate(Arrow, transform.position, transform.rotation);
         ArrowIns.GetComponent<Rigidbody2D>().AddForce(transform.right * LaunchForce);
     }
