@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 781, y: 389}
-  m_SizeDelta: {x: 143.3123, y: 100.5409}
+  m_AnchoredPosition: {x: 835, y: 355}
+  m_SizeDelta: {x: 116.003, y: 95.079}
   m_Pivot: {x: 0.57840705, y: 0.49999997}
 --- !u!114 &147083324
 MonoBehaviour:
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 97f0d8532ff5a0548b8eb9cce96a7d2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 083d2a12d3ab7e14882ef224307685de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1117,10 +1117,10 @@ RectTransform:
   m_Father: {fileID: 1171682436}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28, y: 236}
-  m_SizeDelta: {x: 1729.2354, y: 176.2897}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -12, y: 236}
+  m_SizeDelta: {x: 1629.2354, y: 176.2897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604865013
 MonoBehaviour:
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Extreme Saviour
+  m_text: RescueBud
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a20bfb29078911d429ada60a4107ec73, type: 2}
   m_sharedMaterial: {fileID: 947251145938548154, guid: a20bfb29078911d429ada60a4107ec73, type: 2}
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
