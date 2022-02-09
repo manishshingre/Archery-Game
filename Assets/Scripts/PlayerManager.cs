@@ -2,6 +2,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class PlayerManager : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject levelCompletescreen;
     public GameObject pausemenu;
+    public Text levelno;
+
     public GameObject[] stars;
     private int EnemyCount;
     private int BoxCount;
@@ -40,7 +43,8 @@ public class PlayerManager : MonoBehaviour
     {   
         m_Scene = SceneManager.GetActiveScene();
         sceneName = m_Scene.name;
-
+        levelno.text = sceneName;
+        
         EnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
         BoxCount = GameObject.FindGameObjectsWithTag("Box").Length;
         enemy = GameObject.FindGameObjectsWithTag("Enemy");
@@ -88,11 +92,13 @@ public class PlayerManager : MonoBehaviour
             // starsAchieved();
             gameOverScreen.SetActive(true);
             pausemenu.SetActive(false);
+            // levelno.SetActive(false);
         }
         else if (EnemyLeft == 0){
             starsAchieved();
             levelCompletescreen.SetActive(true);
             pausemenu.SetActive(false);
+            // levelno.SetActive(false);
         }
         if (isGameOver && panel_sound_Count==0){
             GameOverSound.Play();
