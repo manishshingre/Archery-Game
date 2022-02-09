@@ -1,5 +1,8 @@
-
+using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class levelsound : MonoBehaviour
 {
@@ -24,7 +27,7 @@ private void ContinueSettings()
 
         for(int i = 0; i < soundEffectsAudio.Length; i++)
         {
-            soundEffectsAudio[i].volume =soundEffectsFloat ;
+            soundEffectsAudio[i].volume = soundEffectsFloat ;
         }
 }
 

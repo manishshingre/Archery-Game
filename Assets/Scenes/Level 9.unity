@@ -577,10 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundAudio: {fileID: 919238893}
   soundEffectsAudio:
-  - {fileID: 1448066842}
-  - {fileID: 135511701}
-  - {fileID: 1874693325}
-  - {fileID: 419011937}
+  - {fileID: 1531155879}
 --- !u!4 &287984985
 Transform:
   m_ObjectHideFlags: 0
@@ -3255,7 +3252,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6133,7 +6130,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531155876}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c0f5786f639278d479c9da914217fdad, type: 3}
