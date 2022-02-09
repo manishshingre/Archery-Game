@@ -4538,6 +4538,9 @@ MonoBehaviour:
   lr: {fileID: 1011309765}
   LaunchForce: 1375
   Arrow: {fileID: 410760894262548322, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
+  PointPrefab: {fileID: 0}
+  Points: []
+  numberOfpoints: 0
 --- !u!212 &1011309767
 SpriteRenderer:
   m_ObjectHideFlags: 0

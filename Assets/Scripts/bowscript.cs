@@ -15,11 +15,24 @@ public class bowscript : MonoBehaviour
 
     public GameObject Arrow;
 
+//
+    // public float force;
+    public GameObject PointPrefab;
+
+    public GameObject[] Points;
+
+    public int numberOfpoints;//
+
 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {//
+        Points = new GameObject[numberOfpoints];
+        for (int i = 0; i < numberOfpoints; i++)
+        {
+            Points[i]= Instantiate(PointPrefab,transform.position,Quaternion.identity);
+        }
+        //
     }
 
     // Update is called once per frame
@@ -48,6 +61,13 @@ public class bowscript : MonoBehaviour
                 Shoot();
             }
         }
+
+// 
+        for (int i = 0; i < Points.Length; i++)
+        {
+            Points[i].transform.position = PointPosition(i*0.1f);
+        }
+
     }
 
     void FaceMouse()
@@ -88,7 +108,13 @@ public class bowscript : MonoBehaviour
 {
     if(PlayerManager.isGameOver==false && PlayerManager.enemy_count>0){
         GameObject ArrowIns = Instantiate(Arrow, transform.position, transform.rotation);
-        ArrowIns.GetComponent<Rigidbody2D>().AddForce(transform.right * LaunchForce);
+        // ArrowIns.GetComponent<Rigidbody2D>().AddForce(transform.right * LaunchForce);
+        ArrowIns.GetComponent<Rigidbody2D>().velocity = (transform.right * LaunchForce);
     }
 }
+
+    Vector2 PointPosition(float t){
+        Vector2 currentPointPos = (Vector2)transform.position + (direction.normalized * 20 * t) + 0.5f*Physics2D.gravity* (t*t);
+        return currentPointPos;
+    }
 }
