@@ -108,8 +108,8 @@ public class bowscript : MonoBehaviour
 {
     if(PlayerManager.isGameOver==false && PlayerManager.enemy_count>0){
         GameObject ArrowIns = Instantiate(Arrow, transform.position, transform.rotation);
-        // ArrowIns.GetComponent<Rigidbody2D>().AddForce(transform.right * LaunchForce);
-        ArrowIns.GetComponent<Rigidbody2D>().velocity = (transform.right * LaunchForce);
+        ArrowIns.GetComponent<Rigidbody2D>().AddForce(transform.right * LaunchForce);
+        // ArrowIns.GetComponent<Rigidbody2D>().velocity = (transform.right * LaunchForce);
     }
 }
 
