@@ -3564,6 +3564,9 @@ MonoBehaviour:
   lr: {fileID: 1046416206}
   LaunchForce: 1375
   Arrow: {fileID: 410760894262548322, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
+  PointPrefab: {fileID: 7312546736773343908, guid: 06a2eff99105b3c449d58039944ea274, type: 3}
+  Points: []
+  numberOfpoints: 5
 --- !u!212 &1046416208
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5911,7 +5914,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 2b0aa9fd5ea5d3043ac350a9224edc80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be71ee3232909b84a9b1e52b923770a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5931,7 +5934,7 @@ Transform:
   m_GameObject: {fileID: 1619154855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.79, y: 4.16, z: 0}
-  m_LocalScale: {x: 5.51528, y: 6.064264, z: 4.2449}
+  m_LocalScale: {x: 1.3871142, y: 1.5251858, z: 1.0676088}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8

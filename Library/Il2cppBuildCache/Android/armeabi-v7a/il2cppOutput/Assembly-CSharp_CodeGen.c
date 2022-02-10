@@ -78,69 +78,71 @@ extern void bowscript_Dragging_mC423B16CE134A7CFDEA054CD36B947A3245206E6 (void);
 extern void bowscript_DragRelease_m0152FC05EDCB0328589F41936B94832629A080E8 (void);
 // 0x00000021 System.Void bowscript::Shoot()
 extern void bowscript_Shoot_m97BB066E98FCA72EA259B74BCD088D66619B6DA0 (void);
-// 0x00000022 System.Void bowscript::.ctor()
+// 0x00000022 UnityEngine.Vector2 bowscript::PointPosition(System.Single)
+extern void bowscript_PointPosition_mB129A119B7AA2427DCAA6C7AFE2673C7FA38C81F (void);
+// 0x00000023 System.Void bowscript::.ctor()
 extern void bowscript__ctor_m0FADDAA7C984C9385FC93E458CDACD29C55B38AE (void);
-// 0x00000023 System.Void boxBrake::Start()
+// 0x00000024 System.Void boxBrake::Start()
 extern void boxBrake_Start_m86C7780165308A1E0B7D334B552FCA3F0FEFCEA7 (void);
-// 0x00000024 System.Void boxBrake::Update()
+// 0x00000025 System.Void boxBrake::Update()
 extern void boxBrake_Update_m357F086A2BD27CCF3FD31FFA557EF5F4CEB39DF3 (void);
-// 0x00000025 System.Void boxBrake::.ctor()
+// 0x00000026 System.Void boxBrake::.ctor()
 extern void boxBrake__ctor_mD2F89E40AAD205CEFEFDB0433D0A06A9BAC4AAD1 (void);
-// 0x00000026 System.Void changeScene::PressSelection(System.String)
+// 0x00000027 System.Void changeScene::PressSelection(System.String)
 extern void changeScene_PressSelection_m9824170C35B958E982908778A7D467DDCFA7AAE4 (void);
-// 0x00000027 System.Void changeScene::.ctor()
+// 0x00000028 System.Void changeScene::.ctor()
 extern void changeScene__ctor_m1BDAE05E383D670BA1BF847F6E2A6B0F8573BF98 (void);
-// 0x00000028 System.Void destroyparts::Start()
+// 0x00000029 System.Void destroyparts::Start()
 extern void destroyparts_Start_mF3BF3C399922F42B2AD36334A4E37E31ADC346E4 (void);
-// 0x00000029 System.Void destroyparts::.ctor()
+// 0x0000002A System.Void destroyparts::.ctor()
 extern void destroyparts__ctor_mE7E6B56D8C8101A966B9CEFD00CBCB8E3C54F56C (void);
-// 0x0000002A System.Void enemyScript::OnCollisionEnter2D(UnityEngine.Collision2D)
+// 0x0000002B System.Void enemyScript::OnCollisionEnter2D(UnityEngine.Collision2D)
 extern void enemyScript_OnCollisionEnter2D_mBED4FD7BE0705A791D658A9242BDBE0CCA86C4A1 (void);
-// 0x0000002B System.Void enemyScript::ExplodeBox()
+// 0x0000002C System.Void enemyScript::ExplodeBox()
 extern void enemyScript_ExplodeBox_mED1B479F8AE4CCAFA3529234FA0E87AE52D51D97 (void);
-// 0x0000002C System.Void enemyScript::.ctor()
+// 0x0000002D System.Void enemyScript::.ctor()
 extern void enemyScript__ctor_m005BF5D19D66C34D0784565FC12349A72D391E0F (void);
-// 0x0000002D System.Void friendScript::OnCollisionEnter2D(UnityEngine.Collision2D)
+// 0x0000002E System.Void friendScript::OnCollisionEnter2D(UnityEngine.Collision2D)
 extern void friendScript_OnCollisionEnter2D_m53E729F2A055CAD8BA8B5F13DBEB5CCFA9375278 (void);
-// 0x0000002E System.Void friendScript::.ctor()
+// 0x0000002F System.Void friendScript::.ctor()
 extern void friendScript__ctor_m2B2D28F1FFBDE0CF6F70AA6782F3952322D7AB56 (void);
-// 0x0000002F System.Void imageclearer::Awake()
+// 0x00000030 System.Void imageclearer::Awake()
 extern void imageclearer_Awake_m6528A75B7547326495CD7519CCF3102C278AA99E (void);
-// 0x00000030 System.Void imageclearer::.ctor()
+// 0x00000031 System.Void imageclearer::.ctor()
 extern void imageclearer__ctor_mFB92B9F9D429FD31D41D25F236B7A97ACFAC31FC (void);
-// 0x00000031 System.Void levelsound::Awake()
+// 0x00000032 System.Void levelsound::Awake()
 extern void levelsound_Awake_m482858EFCCCFFC03B7A29A26915BC1E859E7E461 (void);
-// 0x00000032 System.Void levelsound::ContinueSettings()
+// 0x00000033 System.Void levelsound::ContinueSettings()
 extern void levelsound_ContinueSettings_m51E08FBFFE4423A039052DBC7A6EC5D74BE8F086 (void);
-// 0x00000033 System.Void levelsound::.ctor()
+// 0x00000034 System.Void levelsound::.ctor()
 extern void levelsound__ctor_m9BBFEDB03B3E927DF90852372EC60C8DBAB87DFF (void);
-// 0x00000034 System.Void levelsound::.cctor()
+// 0x00000035 System.Void levelsound::.cctor()
 extern void levelsound__cctor_m8B2D0B08BEBB6E4D913ADA6132DF5E46731B6C74 (void);
-// 0x00000035 System.Void map2Script::Start()
+// 0x00000036 System.Void map2Script::Start()
 extern void map2Script_Start_mDA5003634554DCED69319DDF1DA7EB26FBC62730 (void);
-// 0x00000036 System.Void map2Script::Update()
+// 0x00000037 System.Void map2Script::Update()
 extern void map2Script_Update_m82902C764AA4807E49A1F633F9778A4BBEF4C361 (void);
-// 0x00000037 System.Void map2Script::UpdateLevelStatus()
+// 0x00000038 System.Void map2Script::UpdateLevelStatus()
 extern void map2Script_UpdateLevelStatus_m4B207B5C9F68B9FC320D9B7F36E87F38AB84E8CB (void);
-// 0x00000038 System.Void map2Script::UpdateLevelImage()
+// 0x00000039 System.Void map2Script::UpdateLevelImage()
 extern void map2Script_UpdateLevelImage_m4982340A562F9C0CEEF86BAEB83CD5EF1261725F (void);
-// 0x00000039 System.Void map2Script::PressSelection(System.String)
+// 0x0000003A System.Void map2Script::PressSelection(System.String)
 extern void map2Script_PressSelection_mD06B9C412AFC125DDFC7EC494FA19F337B5F7A07 (void);
-// 0x0000003A System.Void map2Script::.ctor()
+// 0x0000003B System.Void map2Script::.ctor()
 extern void map2Script__ctor_m56A5D2C99754D449FA2BAF1CEC28823CAEBDE109 (void);
-// 0x0000003B System.Void music::Start()
+// 0x0000003C System.Void music::Start()
 extern void music_Start_m12F3BD8B621802BF95E2F99F4B2D987883669A31 (void);
-// 0x0000003C System.Void music::SaveSoundSettings()
+// 0x0000003D System.Void music::SaveSoundSettings()
 extern void music_SaveSoundSettings_mF579FC4C42BB792351BCFE4C31FB3F67B110AC36 (void);
-// 0x0000003D System.Void music::OnApplicationFocus(System.Boolean)
+// 0x0000003E System.Void music::OnApplicationFocus(System.Boolean)
 extern void music_OnApplicationFocus_m4A6029C0C44863FEEEB1A315A49A3B80FF1774D3 (void);
-// 0x0000003E System.Void music::UpdateSound()
+// 0x0000003F System.Void music::UpdateSound()
 extern void music_UpdateSound_m6F91FBB18E7ED8D1DB6629EDCAF72C902FFCEA72 (void);
-// 0x0000003F System.Void music::.ctor()
+// 0x00000040 System.Void music::.ctor()
 extern void music__ctor_m57E5C4DDA844049D0A50D7E3C8969B8708A7678E (void);
-// 0x00000040 System.Void music::.cctor()
+// 0x00000041 System.Void music::.cctor()
 extern void music__cctor_mB4D2F1D883B44B7FC4F122D65ECD087050BA6332 (void);
-static Il2CppMethodPointer s_methodPointers[64] = 
+static Il2CppMethodPointer s_methodPointers[65] = 
 {
 	BoxScript_OnCollisionEnter2D_m3B4469DCD60B3E26B9D3C946915517D5CA146A19,
 	BoxScript_ExplodeBox_m7863B0CACAEFC0CE6E1C5B1613AAC8FCEA77FEEC,
@@ -175,6 +177,7 @@ static Il2CppMethodPointer s_methodPointers[64] =
 	bowscript_Dragging_mC423B16CE134A7CFDEA054CD36B947A3245206E6,
 	bowscript_DragRelease_m0152FC05EDCB0328589F41936B94832629A080E8,
 	bowscript_Shoot_m97BB066E98FCA72EA259B74BCD088D66619B6DA0,
+	bowscript_PointPosition_mB129A119B7AA2427DCAA6C7AFE2673C7FA38C81F,
 	bowscript__ctor_m0FADDAA7C984C9385FC93E458CDACD29C55B38AE,
 	boxBrake_Start_m86C7780165308A1E0B7D334B552FCA3F0FEFCEA7,
 	boxBrake_Update_m357F086A2BD27CCF3FD31FFA557EF5F4CEB39DF3,
@@ -207,79 +210,80 @@ static Il2CppMethodPointer s_methodPointers[64] =
 	music__ctor_m57E5C4DDA844049D0A50D7E3C8969B8708A7678E,
 	music__cctor_mB4D2F1D883B44B7FC4F122D65ECD087050BA6332,
 };
-static const int32_t s_InvokerIndices[64] = 
+static const int32_t s_InvokerIndices[65] = 
 {
-	1277,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1277,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1277,
-	1526,
-	1526,
-	1526,
-	2423,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1277,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1277,
-	1526,
-	1526,
-	1526,
-	1277,
-	1526,
-	1526,
-	1277,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	1526,
-	2423,
-	1526,
-	1526,
-	1526,
-	1526,
-	1277,
-	1526,
-	1526,
-	1526,
-	1294,
-	1526,
-	1526,
-	2423,
+	1278,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1278,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1278,
+	1527,
+	1527,
+	1527,
+	2424,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1278,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1187,
+	1527,
+	1527,
+	1527,
+	1527,
+	1278,
+	1527,
+	1527,
+	1527,
+	1278,
+	1527,
+	1527,
+	1278,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	2424,
+	1527,
+	1527,
+	1527,
+	1527,
+	1278,
+	1527,
+	1527,
+	1527,
+	1295,
+	1527,
+	1527,
+	2424,
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	64,
+	65,
 	s_methodPointers,
 	0,
 	NULL,

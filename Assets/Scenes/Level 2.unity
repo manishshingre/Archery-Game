@@ -4566,7 +4566,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4cd69d0f6d4b88e469eda43032d6b174, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5382,7 +5382,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e1d555ff7f14c6a458c48d8a96844605, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6047,6 +6047,9 @@ MonoBehaviour:
   lr: {fileID: 1897236293}
   LaunchForce: 1375
   Arrow: {fileID: 410760894262548322, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
+  PointPrefab: {fileID: 7312546736773343908, guid: 06a2eff99105b3c449d58039944ea274, type: 3}
+  Points: []
+  numberOfpoints: 5
 --- !u!212 &1897236295
 SpriteRenderer:
   m_ObjectHideFlags: 0

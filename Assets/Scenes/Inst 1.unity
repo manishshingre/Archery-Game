@@ -337,14 +337,14 @@ RectTransform:
   m_GameObject: {fileID: 186873896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.19, y: 1.19, z: 1.19}
   m_Children: []
   m_Father: {fileID: 141055294}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197.3, y: -0}
+  m_AnchoredPosition: {x: -238, y: 1}
   m_SizeDelta: {x: 128.3682, y: 122.0642}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186873898
@@ -485,7 +485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.6262, y: -0.2694}
+  m_AnchoredPosition: {x: -19.1, y: -2}
   m_SizeDelta: {x: 721.2505, y: 248.028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &691787193
@@ -705,7 +705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.8688, y: -3.8685}
+  m_AnchoredPosition: {x: 159.4, y: -20.6}
   m_SizeDelta: {x: 205.9781, y: 121.7371}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170637950
@@ -728,7 +728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'He is the main Hero of the game. You can shoot arrows by dragging and
+  m_text: 'She is the main Hero of the game. You can shoot arrows by dragging and
     releasing. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a20bfb29078911d429ada60a4107ec73, type: 2}
