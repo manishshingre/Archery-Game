@@ -3545,6 +3545,7 @@ GameObject:
   - component: {fileID: 1172663998}
   - component: {fileID: 1172663997}
   - component: {fileID: 1172663996}
+  - component: {fileID: 1172663999}
   m_Layer: 0
   m_Name: Bow
   m_TagString: Untagged
@@ -3681,7 +3682,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172663994}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a16e8c1668dd4b49901a209f0314dbb, type: 3}
   m_Name: 
@@ -3690,9 +3691,6 @@ MonoBehaviour:
   lr: {fileID: 1172663996}
   LaunchForce: 1375
   Arrow: {fileID: 410760894262548322, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
-  PointPrefab: {fileID: 7312546736773343908, guid: 06a2eff99105b3c449d58039944ea274, type: 3}
-  Points: []
-  numberOfpoints: 5
 --- !u!212 &1172663998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3744,6 +3742,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1172663999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172663994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8502ffaa01f2a43ba1d5bd9f9208cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0}
+  lr: {fileID: 1172663996}
+  LaunchForce: 1375
+  Arrow: {fileID: 410760894262548322, guid: 44600c9a720d7b246a0bc8625c1dfe31, type: 3}
+  PointPrefab: {fileID: 7312546736773343908, guid: 06a2eff99105b3c449d58039944ea274, type: 3}
+  Points: []
+  numberOfpoints: 5
 --- !u!1 &1211823738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,7 +4447,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.00001335144, y: -35.000076}
+  m_AnchoredPosition: {x: 241.80928, y: 215.33655}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1496983297
