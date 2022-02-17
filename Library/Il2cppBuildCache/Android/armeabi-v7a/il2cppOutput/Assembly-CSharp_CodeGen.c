@@ -64,85 +64,109 @@ extern void arrowScript_trackMovement_m9EF5ADC9DB94BE6929E01072BFD54217545BC710 
 extern void arrowScript_OnCollisionEnter2D_mCF41B8DAE2AE0ACFCA20B4D5ECB8249272AEFBF7 (void);
 // 0x0000001A System.Void arrowScript::.ctor()
 extern void arrowScript__ctor_m5B7C0AD4CC39AF0CA12C579FF4A5A8D2BABE15BF (void);
-// 0x0000001B System.Void bowscript::Start()
+// 0x0000001B System.Void bow_withoutprojectile::Start()
+extern void bow_withoutprojectile_Start_mBFB012A72F38BF2D9285452A01D3ED85CE504CA1 (void);
+// 0x0000001C System.Void bow_withoutprojectile::Update()
+extern void bow_withoutprojectile_Update_mE3F4441D9C88BEF1907B1D36F5B4846B601CEE03 (void);
+// 0x0000001D System.Void bow_withoutprojectile::FaceMouse()
+extern void bow_withoutprojectile_FaceMouse_m9E1CC9F9C863ACE2D761664ED88FFA6FB706EDEE (void);
+// 0x0000001E System.Void bow_withoutprojectile::DragStart()
+extern void bow_withoutprojectile_DragStart_m3B2051DD3C69D66E2398AB6E1DF1A95C00C2F661 (void);
+// 0x0000001F System.Void bow_withoutprojectile::Dragging()
+extern void bow_withoutprojectile_Dragging_m0E299C12F13993325231A5325D7B312A527EE50F (void);
+// 0x00000020 System.Void bow_withoutprojectile::DragRelease()
+extern void bow_withoutprojectile_DragRelease_m3E012B10151D1EC562239A5FAF045F9DA13E2F18 (void);
+// 0x00000021 System.Void bow_withoutprojectile::Shoot()
+extern void bow_withoutprojectile_Shoot_mD703F74006BB7A0ADC594B584D47307A2D8C3731 (void);
+// 0x00000022 UnityEngine.Vector2 bow_withoutprojectile::PointPosition(System.Single)
+extern void bow_withoutprojectile_PointPosition_mCE6937EB2B9D4C654CB0046F70128D17719B0310 (void);
+// 0x00000023 System.Void bow_withoutprojectile::.ctor()
+extern void bow_withoutprojectile__ctor_m9BE696E4E0C6AF4B12A2F7BFB4683BC7E8B7E614 (void);
+// 0x00000024 System.Void bowscript::Start()
 extern void bowscript_Start_m3779CA0D32412A1DE155C108F2F2D36E506BDDA7 (void);
-// 0x0000001C System.Void bowscript::Update()
+// 0x00000025 System.Void bowscript::Update()
 extern void bowscript_Update_m10B1FBC30005D3638C45CB1179627AFEC913A1F0 (void);
-// 0x0000001D System.Void bowscript::FaceMouse()
+// 0x00000026 System.Void bowscript::FaceMouse()
 extern void bowscript_FaceMouse_m48AC939599555FB8CA150335C8420D4EAB141BF6 (void);
-// 0x0000001E System.Void bowscript::DragStart()
+// 0x00000027 System.Void bowscript::DragStart()
 extern void bowscript_DragStart_mD883458CE14EBB9902832FCCE825A8F91AFC7DA0 (void);
-// 0x0000001F System.Void bowscript::Dragging()
+// 0x00000028 System.Void bowscript::Dragging()
 extern void bowscript_Dragging_mC423B16CE134A7CFDEA054CD36B947A3245206E6 (void);
-// 0x00000020 System.Void bowscript::DragRelease()
+// 0x00000029 System.Void bowscript::DragRelease()
 extern void bowscript_DragRelease_m0152FC05EDCB0328589F41936B94832629A080E8 (void);
-// 0x00000021 System.Void bowscript::Shoot()
+// 0x0000002A System.Void bowscript::Shoot()
 extern void bowscript_Shoot_m97BB066E98FCA72EA259B74BCD088D66619B6DA0 (void);
-// 0x00000022 UnityEngine.Vector2 bowscript::PointPosition(System.Single)
-extern void bowscript_PointPosition_mB129A119B7AA2427DCAA6C7AFE2673C7FA38C81F (void);
-// 0x00000023 System.Void bowscript::.ctor()
+// 0x0000002B System.Void bowscript::.ctor()
 extern void bowscript__ctor_m0FADDAA7C984C9385FC93E458CDACD29C55B38AE (void);
-// 0x00000024 System.Void boxBrake::Start()
+// 0x0000002C System.Void boxBrake::Start()
 extern void boxBrake_Start_m86C7780165308A1E0B7D334B552FCA3F0FEFCEA7 (void);
-// 0x00000025 System.Void boxBrake::Update()
+// 0x0000002D System.Void boxBrake::Update()
 extern void boxBrake_Update_m357F086A2BD27CCF3FD31FFA557EF5F4CEB39DF3 (void);
-// 0x00000026 System.Void boxBrake::.ctor()
+// 0x0000002E System.Void boxBrake::.ctor()
 extern void boxBrake__ctor_mD2F89E40AAD205CEFEFDB0433D0A06A9BAC4AAD1 (void);
-// 0x00000027 System.Void changeScene::PressSelection(System.String)
+// 0x0000002F System.Void changeScene::PressSelection(System.String)
 extern void changeScene_PressSelection_m9824170C35B958E982908778A7D467DDCFA7AAE4 (void);
-// 0x00000028 System.Void changeScene::.ctor()
+// 0x00000030 System.Void changeScene::.ctor()
 extern void changeScene__ctor_m1BDAE05E383D670BA1BF847F6E2A6B0F8573BF98 (void);
-// 0x00000029 System.Void destroyparts::Start()
+// 0x00000031 System.Void destroyparts::Start()
 extern void destroyparts_Start_mF3BF3C399922F42B2AD36334A4E37E31ADC346E4 (void);
-// 0x0000002A System.Void destroyparts::.ctor()
+// 0x00000032 System.Void destroyparts::.ctor()
 extern void destroyparts__ctor_mE7E6B56D8C8101A966B9CEFD00CBCB8E3C54F56C (void);
-// 0x0000002B System.Void enemyScript::OnCollisionEnter2D(UnityEngine.Collision2D)
+// 0x00000033 System.Void enemyScript::OnCollisionEnter2D(UnityEngine.Collision2D)
 extern void enemyScript_OnCollisionEnter2D_mBED4FD7BE0705A791D658A9242BDBE0CCA86C4A1 (void);
-// 0x0000002C System.Void enemyScript::ExplodeBox()
+// 0x00000034 System.Void enemyScript::ExplodeBox()
 extern void enemyScript_ExplodeBox_mED1B479F8AE4CCAFA3529234FA0E87AE52D51D97 (void);
-// 0x0000002D System.Void enemyScript::.ctor()
+// 0x00000035 System.Void enemyScript::.ctor()
 extern void enemyScript__ctor_m005BF5D19D66C34D0784565FC12349A72D391E0F (void);
-// 0x0000002E System.Void friendScript::OnCollisionEnter2D(UnityEngine.Collision2D)
+// 0x00000036 System.Void exitbutton::Start()
+extern void exitbutton_Start_mD16B9A3FF8F31C71E16DF1A942DE29F0F1BE5EF9 (void);
+// 0x00000037 System.Void exitbutton::Update()
+extern void exitbutton_Update_m0394B206AAA61E738F3031C8E3037DB71227999F (void);
+// 0x00000038 System.Void exitbutton::Exit()
+extern void exitbutton_Exit_m70F54861D003B594DAE615FEA03F7533CB32C988 (void);
+// 0x00000039 System.Void exitbutton::.ctor()
+extern void exitbutton__ctor_mAA5C78535E7C3110ADA62D52D0D296C5B98FF2E2 (void);
+// 0x0000003A System.Void friendScript::OnCollisionEnter2D(UnityEngine.Collision2D)
 extern void friendScript_OnCollisionEnter2D_m53E729F2A055CAD8BA8B5F13DBEB5CCFA9375278 (void);
-// 0x0000002F System.Void friendScript::.ctor()
+// 0x0000003B System.Void friendScript::.ctor()
 extern void friendScript__ctor_m2B2D28F1FFBDE0CF6F70AA6782F3952322D7AB56 (void);
-// 0x00000030 System.Void imageclearer::Awake()
+// 0x0000003C System.Void imageclearer::Awake()
 extern void imageclearer_Awake_m6528A75B7547326495CD7519CCF3102C278AA99E (void);
-// 0x00000031 System.Void imageclearer::.ctor()
+// 0x0000003D System.Void imageclearer::.ctor()
 extern void imageclearer__ctor_mFB92B9F9D429FD31D41D25F236B7A97ACFAC31FC (void);
-// 0x00000032 System.Void levelsound::Awake()
+// 0x0000003E System.Void levelsound::Awake()
 extern void levelsound_Awake_m482858EFCCCFFC03B7A29A26915BC1E859E7E461 (void);
-// 0x00000033 System.Void levelsound::ContinueSettings()
+// 0x0000003F System.Void levelsound::ContinueSettings()
 extern void levelsound_ContinueSettings_m51E08FBFFE4423A039052DBC7A6EC5D74BE8F086 (void);
-// 0x00000034 System.Void levelsound::.ctor()
+// 0x00000040 System.Void levelsound::.ctor()
 extern void levelsound__ctor_m9BBFEDB03B3E927DF90852372EC60C8DBAB87DFF (void);
-// 0x00000035 System.Void levelsound::.cctor()
+// 0x00000041 System.Void levelsound::.cctor()
 extern void levelsound__cctor_m8B2D0B08BEBB6E4D913ADA6132DF5E46731B6C74 (void);
-// 0x00000036 System.Void map2Script::Start()
+// 0x00000042 System.Void map2Script::Start()
 extern void map2Script_Start_mDA5003634554DCED69319DDF1DA7EB26FBC62730 (void);
-// 0x00000037 System.Void map2Script::Update()
+// 0x00000043 System.Void map2Script::Update()
 extern void map2Script_Update_m82902C764AA4807E49A1F633F9778A4BBEF4C361 (void);
-// 0x00000038 System.Void map2Script::UpdateLevelStatus()
+// 0x00000044 System.Void map2Script::UpdateLevelStatus()
 extern void map2Script_UpdateLevelStatus_m4B207B5C9F68B9FC320D9B7F36E87F38AB84E8CB (void);
-// 0x00000039 System.Void map2Script::UpdateLevelImage()
+// 0x00000045 System.Void map2Script::UpdateLevelImage()
 extern void map2Script_UpdateLevelImage_m4982340A562F9C0CEEF86BAEB83CD5EF1261725F (void);
-// 0x0000003A System.Void map2Script::PressSelection(System.String)
+// 0x00000046 System.Void map2Script::PressSelection(System.String)
 extern void map2Script_PressSelection_mD06B9C412AFC125DDFC7EC494FA19F337B5F7A07 (void);
-// 0x0000003B System.Void map2Script::.ctor()
+// 0x00000047 System.Void map2Script::.ctor()
 extern void map2Script__ctor_m56A5D2C99754D449FA2BAF1CEC28823CAEBDE109 (void);
-// 0x0000003C System.Void music::Start()
+// 0x00000048 System.Void music::Start()
 extern void music_Start_m12F3BD8B621802BF95E2F99F4B2D987883669A31 (void);
-// 0x0000003D System.Void music::SaveSoundSettings()
+// 0x00000049 System.Void music::SaveSoundSettings()
 extern void music_SaveSoundSettings_mF579FC4C42BB792351BCFE4C31FB3F67B110AC36 (void);
-// 0x0000003E System.Void music::OnApplicationFocus(System.Boolean)
+// 0x0000004A System.Void music::OnApplicationFocus(System.Boolean)
 extern void music_OnApplicationFocus_m4A6029C0C44863FEEEB1A315A49A3B80FF1774D3 (void);
-// 0x0000003F System.Void music::UpdateSound()
+// 0x0000004B System.Void music::UpdateSound()
 extern void music_UpdateSound_m6F91FBB18E7ED8D1DB6629EDCAF72C902FFCEA72 (void);
-// 0x00000040 System.Void music::.ctor()
+// 0x0000004C System.Void music::.ctor()
 extern void music__ctor_m57E5C4DDA844049D0A50D7E3C8969B8708A7678E (void);
-// 0x00000041 System.Void music::.cctor()
+// 0x0000004D System.Void music::.cctor()
 extern void music__cctor_mB4D2F1D883B44B7FC4F122D65ECD087050BA6332 (void);
-static Il2CppMethodPointer s_methodPointers[65] = 
+static Il2CppMethodPointer s_methodPointers[77] = 
 {
 	BoxScript_OnCollisionEnter2D_m3B4469DCD60B3E26B9D3C946915517D5CA146A19,
 	BoxScript_ExplodeBox_m7863B0CACAEFC0CE6E1C5B1613AAC8FCEA77FEEC,
@@ -170,6 +194,15 @@ static Il2CppMethodPointer s_methodPointers[65] =
 	arrowScript_trackMovement_m9EF5ADC9DB94BE6929E01072BFD54217545BC710,
 	arrowScript_OnCollisionEnter2D_mCF41B8DAE2AE0ACFCA20B4D5ECB8249272AEFBF7,
 	arrowScript__ctor_m5B7C0AD4CC39AF0CA12C579FF4A5A8D2BABE15BF,
+	bow_withoutprojectile_Start_mBFB012A72F38BF2D9285452A01D3ED85CE504CA1,
+	bow_withoutprojectile_Update_mE3F4441D9C88BEF1907B1D36F5B4846B601CEE03,
+	bow_withoutprojectile_FaceMouse_m9E1CC9F9C863ACE2D761664ED88FFA6FB706EDEE,
+	bow_withoutprojectile_DragStart_m3B2051DD3C69D66E2398AB6E1DF1A95C00C2F661,
+	bow_withoutprojectile_Dragging_m0E299C12F13993325231A5325D7B312A527EE50F,
+	bow_withoutprojectile_DragRelease_m3E012B10151D1EC562239A5FAF045F9DA13E2F18,
+	bow_withoutprojectile_Shoot_mD703F74006BB7A0ADC594B584D47307A2D8C3731,
+	bow_withoutprojectile_PointPosition_mCE6937EB2B9D4C654CB0046F70128D17719B0310,
+	bow_withoutprojectile__ctor_m9BE696E4E0C6AF4B12A2F7BFB4683BC7E8B7E614,
 	bowscript_Start_m3779CA0D32412A1DE155C108F2F2D36E506BDDA7,
 	bowscript_Update_m10B1FBC30005D3638C45CB1179627AFEC913A1F0,
 	bowscript_FaceMouse_m48AC939599555FB8CA150335C8420D4EAB141BF6,
@@ -177,7 +210,6 @@ static Il2CppMethodPointer s_methodPointers[65] =
 	bowscript_Dragging_mC423B16CE134A7CFDEA054CD36B947A3245206E6,
 	bowscript_DragRelease_m0152FC05EDCB0328589F41936B94832629A080E8,
 	bowscript_Shoot_m97BB066E98FCA72EA259B74BCD088D66619B6DA0,
-	bowscript_PointPosition_mB129A119B7AA2427DCAA6C7AFE2673C7FA38C81F,
 	bowscript__ctor_m0FADDAA7C984C9385FC93E458CDACD29C55B38AE,
 	boxBrake_Start_m86C7780165308A1E0B7D334B552FCA3F0FEFCEA7,
 	boxBrake_Update_m357F086A2BD27CCF3FD31FFA557EF5F4CEB39DF3,
@@ -189,6 +221,10 @@ static Il2CppMethodPointer s_methodPointers[65] =
 	enemyScript_OnCollisionEnter2D_mBED4FD7BE0705A791D658A9242BDBE0CCA86C4A1,
 	enemyScript_ExplodeBox_mED1B479F8AE4CCAFA3529234FA0E87AE52D51D97,
 	enemyScript__ctor_m005BF5D19D66C34D0784565FC12349A72D391E0F,
+	exitbutton_Start_mD16B9A3FF8F31C71E16DF1A942DE29F0F1BE5EF9,
+	exitbutton_Update_m0394B206AAA61E738F3031C8E3037DB71227999F,
+	exitbutton_Exit_m70F54861D003B594DAE615FEA03F7533CB32C988,
+	exitbutton__ctor_mAA5C78535E7C3110ADA62D52D0D296C5B98FF2E2,
 	friendScript_OnCollisionEnter2D_m53E729F2A055CAD8BA8B5F13DBEB5CCFA9375278,
 	friendScript__ctor_m2B2D28F1FFBDE0CF6F70AA6782F3952322D7AB56,
 	imageclearer_Awake_m6528A75B7547326495CD7519CCF3102C278AA99E,
@@ -210,7 +246,7 @@ static Il2CppMethodPointer s_methodPointers[65] =
 	music__ctor_m57E5C4DDA844049D0A50D7E3C8969B8708A7678E,
 	music__cctor_mB4D2F1D883B44B7FC4F122D65ECD087050BA6332,
 };
-static const int32_t s_InvokerIndices[65] = 
+static const int32_t s_InvokerIndices[77] = 
 {
 	1278,
 	1527,
@@ -250,11 +286,23 @@ static const int32_t s_InvokerIndices[65] =
 	1527,
 	1527,
 	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
 	1278,
 	1527,
 	1527,
 	1527,
 	1278,
+	1527,
+	1527,
+	1527,
+	1527,
 	1527,
 	1527,
 	1278,
@@ -283,7 +331,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	65,
+	77,
 	s_methodPointers,
 	0,
 	NULL,
